@@ -42,10 +42,7 @@ org.solution.service.shop.service.impl.PaymentServiceImpl#payment
 1) Начальный ClientStep, если в сущности клиента isOnlineShop = true, тогда следующий шаг OnlineShopStep иначе следующий шаг ShopStep
 
    ClientStep --> ShopStep
-   |
-   |isOnlineShop 
-   \/
-   OnlineShopStep
+   ClientStep - если isOnlineShop-> OnlineShopStep
 
 2) На шаге магазина происходит списание денег со счета клиента
 посредством метода org.solution.service.shop.domain.Client#purchase
