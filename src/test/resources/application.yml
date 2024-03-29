@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: shop-service
+
+server:
+  port: 8080
+
+client:
+  moneyInBank: 5000
